@@ -178,7 +178,7 @@ class App extends React.Component {
                 />}
               /> */}
               <Route 
-                path='/contacts' 
+                path='/' exact
                 element={<Contacts
                   contacts={this.state.contacts}
                   addContact={this.addContact}
