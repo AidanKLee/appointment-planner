@@ -238,7 +238,7 @@ class Appointments extends React.Component {
                             />
                         </section> :
                         <section id='appointmentList' style={this.state.addAppointment ? {width: 'calc(100% - 260px)'} : {width: '100%'}}>
-                            <h5>You Have No Appointmens</h5>
+                            <h5>You Have No Appointments</h5>
                         </section>
                     }
                     
