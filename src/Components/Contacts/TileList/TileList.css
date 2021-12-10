@@ -1,0 +1,13 @@
+#contactList {
+    background-color: rgb(30, 30, 30);
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px;
+}
+
+#contactList ul {
+    width: 100%;
+    /* padding: 8px 8px 4px 8px; */
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    display: block;
+}

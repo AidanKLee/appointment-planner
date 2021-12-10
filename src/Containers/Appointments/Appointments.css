@@ -1,0 +1,76 @@
+#appointments {
+    height: 100%;
+}
+
+#appointmentsHeading {
+    display: flex;
+    align-items: center;
+    margin: 0 16px 0 0;
+}
+
+#appointmentsHeading h2 {
+    padding-right: 0 !important;
+}
+
+#appointmentsHeading svg {
+    /* display: none; */
+    height: 32px;
+    width: 32px;
+    fill: rgb(250, 250, 250);
+    margin: 16px;
+}
+
+#appointmentsHeading svg:hover {
+    fill: rgb(100, 100, 255)
+}
+
+#appointmentsHeading svg:active {
+    fill: rgb(100, 100, 200)
+}
+
+#appointmentsSectionWrapper {
+    height: calc(100% - 90px);
+    background-color: rgb(35, 35, 35);
+    border-radius: 8px;
+    display: flex;
+    margin: 0 8px;
+    justify-content: space-between;
+}
+
+#appointmentForm {
+    width: 260px;
+}
+
+#appointmentList {
+    width: calc(100% - 260px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#appointmentList h5 {
+    text-align: center;
+    margin: auto auto;
+    padding: 32px;
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    #appointmentForm {
+        width: 100%;
+        height: fit-content;
+    }
+
+    #appointmentList {
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+
+    #appointmentsSectionWrapper {
+        flex-wrap: wrap;
+    }
+
+    #appointmentsHeading {
+        margin: 0;
+    }
+}

@@ -1,0 +1,52 @@
+header {
+    width: 100%;
+    height: 64px;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(250, 250, 250);
+    position: sticky;
+    top: 0;
+    z-index: 45;
+}
+
+#headerContents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 1440px;
+}
+
+#headerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerLogo h1 {
+    margin: 0 16px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+header svg {
+    height: 40px;
+    width: 40px;
+    fill: rgb(250, 250, 250);
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 720px) {
+    #headerNav {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
